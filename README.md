@@ -68,11 +68,12 @@ per minute
 
 ##### Storage Estimation 
 - we can assume that the job is in **general a python script** that we have to run 
-- Assuming we have 8,640,000 unique jobs per day and each job is a python script of roughly **200 lines and each line has roughly 50 bytes of data** 
+- Assuming we have 1,728,000 unique jobs per day and each job is a python script of roughly **200 lines and each line has roughly 50 bytes of data** 
 
 **Storage per script:** 200 lines * 50 bytes =10000 bytes (10KB) per script
 
-**Total Storage per day for scripts :** 10KB * 8,640,000 = 8,64,00,000 KB per day ~ **(82.4 GB)**
+**Total Storage per day for scripts :** 10KB * 1,728,000 = 17,280,000 KB per day ~ **(16.48 GB/day)**
+
 #### Calculation (per user)
 ##### Assumptions
 - Jobs per user = **5**
@@ -89,7 +90,7 @@ Total/day = 75 + 7.5 + 2 = **84.5 KB/day** ≈ **~85 KB/day**
 
 **Total Storage per day for total user:** 10,000 users x 85KB = 850,000 KB (0.81GB)
 
-> ***Total Storage Requred per day: 82.4GB + 0.81GB ~ 83GB***
+> ***Total Storage Requred per day: 16.48GB + 0.81GB ~ 17GB***
 ### <u>Basic High Level Design</u>
 -------------------------------------
 ![basic high level design](https://github.com/Harshit-kumar24/job-scheduler-python/blob/8d047aaeaf8af8e295fc7fd46e03c72cd290f0bd/images/Pasted%20image%2020250919121438.png)
