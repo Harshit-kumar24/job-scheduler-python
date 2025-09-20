@@ -130,10 +130,10 @@ Total/day = 75 + 7.5 + 2 = **84.5 KB/day** ≈ **~85 KB/day**
   
 ### <u>Important Problem that should be addressed</u>
 
-- **The problem here is to load the next minute job**. We have to query the DB for **8,640,000** per minute at peak which is a lot and then we also have to filter for the next minute jobs and then **sort** them in **ascending** order to load into the queue 
+- **The problem here is to load the next minute job**. We have to query the DB for **1,728,000** per minute at peak which is a lot and then we also have to filter for the next minute jobs and then **sort** them in **ascending** order to load into the queue 
 - which is quite a lot of work. To solve this problem we will use the concept of **partitions & sort key**
-- since we have to deal with the jobs that are coming in next minute, other data is totally irrelevant at the moment so instead quering **8.6 million( Approx. )** records we can partition this data into **24 partitions** or less based on requirement and for every hour now we will store data into a different partition DB so for **(hour1: partition1), (hour2: partition2), (hour3: partition3)** and so on.
-- Now we don't have to query **8.6 million records** instead we have to query **(8.6 million/ 24) records approx** which will rapidly **decrease the latency**. 
+- since we have to deal with the jobs that are coming in next minute, other data is totally irrelevant at the moment so instead quering **1.7 million( Approx. )** records we can partition this data into **24 partitions** or less based on requirement and for every hour now we will store data into a different partition DB so for **(hour1: partition1), (hour2: partition2), (hour3: partition3)** and so on.
+- Now we don't have to query **1.7 million records** instead we have to query **(1.7 million/24) records approx** which will rapidly **decrease the latency**. 
 - the response if we will fetch status of a job it will look something like this,
   
 ```
