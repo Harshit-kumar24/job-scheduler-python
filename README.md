@@ -1,3 +1,12 @@
+### List of Contents
+----------------------------
+- [How to setup the project](https://github.com/Harshit-kumar24/job-scheduler-python?tab=readme-ov-file#how-to-setup-the-project)
+- [Scaling the job scheduler](https://github.com/Harshit-kumar24/job-scheduler-python?tab=readme-ov-file#scaling-the-job-scheduler)
+- [Basic high level design](https://github.com/Harshit-kumar24/job-scheduler-python?tab=readme-ov-file#basic-high-level-design)
+- [Full high level design](https://github.com/Harshit-kumar24/job-scheduler-python?tab=readme-ov-file#full-high-level-design)
+- [Important problem that should be addressed](https://github.com/Harshit-kumar24/job-scheduler-python?tab=readme-ov-file#important-problem-that-should-be-addressed)
+- [Future enhancements](https://github.com/Harshit-kumar24/job-scheduler-python?tab=readme-ov-file#future-enhancements)
+
 ### How to setup the project 
 ----------------------------------
 - To setup this project first start docker engine in your local or on server
