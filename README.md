@@ -20,7 +20,7 @@ http://{dns}:8000/docs
 - change the **dns** accordingly
   
 
-### Overview
+### Scaling the Job Scheduler
 ------------
 You need to develop a scheduler microservice that allows job scheduling while maintaining
 critical job-related information. The service should have API endpoints for job management,
